@@ -352,7 +352,7 @@ export JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=github,oidc"
 3. springsecurity: spring security实现，可以新增用户，修改用户密码等
 4. ldap: [@pandalin](https://github.com/pandalin)和[codepiano](https://github.com/codepiano)贡献的ldap实现
 
-实现了相关接口后，可以通过[com.ctrip.framework.apollo.portal.configuration.AuthConfiguration](https://github.com/ctripcorp/apollo/blob/master/apollo-portal/src/main/java/com/ctrip/framework/apollo/portal/spi/configuration/AuthConfiguration.java)在运行时替换默认的实现。
+实现了相关接口后，可以通过[com.ctrip.framework.apollo.portal.spi.configuration.AuthConfiguration](https://github.com/ctripcorp/apollo/blob/master/apollo-portal/src/main/java/com/ctrip/framework/apollo/portal/spi/configuration/AuthConfiguration.java)在运行时替换默认的实现。
 
 接入SSO的思路如下：
 
